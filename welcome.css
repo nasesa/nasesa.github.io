@@ -1,0 +1,15 @@
+.mobile{
+    margin: auto;
+    width: 150px;
+    height:150px;
+    background-color: #000000bb;
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    padding: 10px;
+    border: 6px double black;
+    color: #ffffffcc;
+    font-size: 40px;
+  }
+  
+  
