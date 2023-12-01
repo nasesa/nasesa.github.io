@@ -2,87 +2,34 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-   .mainholder{
-    float: right;
-    background-color: #ede7f1ef;
-   margin-right: 1vw;
-   width: 70vw;
-   height: 95vh;
-   border: 10px double #681596cc;
+  body {
+    background-image: url("layout/cd.png");
+    background-color: #150120;
+    background-size:cover;
+    background-repeat: no-repeat;
+
   }
-  
-  .sidebar{
+   
+  .mainholder{
     margin: auto;
-    overflow: hidden;
-    float: left;
-      background-color: #ede7f1bb;
-   width: 20vw;
-   height: 80vh;
-   border: 10px double #681596cc;
+    width: 80vw;
+    height: 95vh;
+    border: 10px;
+    background-color: #ede7f144;
+    border: 4px solid #681596cc;
+    border-radius: 10px;
   }
   
-  .welcome{
-    position: relative;
-   overflow: hidden;
+  .banner{
     margin: auto;
-   width: auto;
-   height: 5vh;
-   border: 5px solid #681596;
   }
   
-  .welcome p{
-    
-   position: absolute;
-   width: 75%;
-   height: 100%;
-   margin: 0;
-   line-height: 50px;
-   text-align: center;
-   /* Starting position */
-   transform:translateX(100%);
-   /* Apply animation to this element */
-   animation: scroll-left 15s linear infinite;
-  }
-  /* Move it (define the animation) */
-  @keyframes scroll-left {
-   0%   {
-   transform: translateX(100%); 		
-   }
-   100% {
-   transform: translateX(-100%); 
-   }
-  }
-  
-  .fontchange{
-    position: relative;
-   overflow: hidden;
+  .mainbody{
     margin: auto;
-   width: auto;
-   height: 5vh;
-   border: 5px solid #681596;
+    width: 75vw;
+    height: 85vh;
+    border: 10px;
+    background-color: #ede7f144;
+    border: 4px solid #681596cc;
+    border-radius: 10px;
   }
-  
-  .fontchange p{
-    font-size: 30px;
-   position: absolute;
-   width: 75%;
-   height: 100%;
-   margin: 0;
-   line-height: 50px;
-   text-align: center;
-   /* Starting position */
-   transform:translateX(50%);
-   /* Apply animation to this element */
-   animation: scroll-left 2s linear infinite;
-  }
-  /* Move it (define the animation) */
-  @keyframes scroll-left {
-   0%   {
-   transform: translateX(100%); 		
-   }
-   100% {
-   transform: translateX(-100%); 
-   }
-  }
-  
-  
