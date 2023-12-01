@@ -59,10 +59,12 @@
     text-align: right;
     float: right;
   }
+  .audiopanel button{
+    scale: 2;
+  }
   .sidenav{
     float: left;
   }
-
-  #player {
-    width: 20%;
+  .hide{
+    opacity: 0;
   }
