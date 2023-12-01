@@ -62,9 +62,12 @@
   .audiopanel button{
     scale: 2;
   }
-  .sidenav{
-    float: left;
-  }
-  .hide{
-    opacity: 0;
+
+  .footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  height:32px;
+  width: 100%;
+  backdrop-filter:blur(4px)
   }
