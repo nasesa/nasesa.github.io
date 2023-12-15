@@ -10,19 +10,26 @@
   }
    
   .mainholder{
-    background-size:cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size:contain;
+    background-repeat: repeat;
     margin: auto;
     width: 80vw;
-    height: 95vh;
+    height: 100%;
     border: 10px;
+    opacity: 0.75;
+    background-image: url("./layout/bg.gif");
     background-color: #68448044;
+    background-repeat: repeat-y;
     border: 4px solid #681596cc;
     border-radius: 10px;
   }
+
+  .mainholder p{
+    opacity: 1;
+  }
   
   .banner{
-    /* background-image: url("./layout/banner.bmp"); */
     margin: auto;
     height: 5vh;
     width: 100%;
