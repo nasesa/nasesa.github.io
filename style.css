@@ -1,10 +1,10 @@
 @font-face { font-family: Dos; src: url('./misc/dos.ttf'); } 
 
   body {
+    image-rendering: pixelated;
     background-color: #C5508B;
     font-family: Dos;
     font-size: large;
-    
   }
 
   a {
