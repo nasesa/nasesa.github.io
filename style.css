@@ -25,6 +25,7 @@
     width: 100vw;
     height:100vh;
     opacity: 0.4;
+    /* filter: blur(1px); */
   }
   .inner {
     padding: 10px;
