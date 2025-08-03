@@ -1,71 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gaming</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/x-icon" href="layout/tdynr0t0.bmp">
-  </head>
-  <body>
-    <div class="center"></div>
-    <script src="main.js"></script>
-    <div class="header">
-    <div class="audiopanel"> 
-      <audio id="player" loop>
-      <source src="./misc/1337.mp3" type="audio/mpeg"></audio>
-    <button onclick="toggleMusic()"><img id="audiotoggle" src="./layout/audio.png"></button> </div>
-    </div>
-    <div class="sidebar-group">
-      <div class="sidebar">
-        <div class="title-bar">gaming</div>
-        <img src="./misc/gaming.gif">
-        <div class="inner">
-          Table of Contents:
-        <a href="/">Home</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/game.html">Game</a><br>
-        Links:<br>
-        <a href="https://github.com/nasesa"><img src="https://github.com/favicon.ico" width="16"> Github</a><br>
-        <a href="https://steamcommunity.com/id/iamgamingreal/"><img src="https://steamcommunity.com/favicon.ico" width="16"> Steam</a>
-        </div>
-      </div>
-    </div>
-    <div class="center-group">
-      <div class="wide-sidebar">
-        <div class="box-title-bar">welcome.txt - Notepad <div class="right">- 🗖 x</div></div>
-        <div class="inner">
-          <p>welcome to my site!</p>
-          <p>i'm gaming.</p>
-          <p>i dunno what else to add here</p>
-          <p>click the button in the top right of the page to listen to some <a href="https://www.newgrounds.com/audio/listen/1337">music</a></p>
-          <img src="./misc/pepper.gif">
-          <img src="./misc/computer.gif">
-          <img src="./misc/microwave.gif">
-          <a href="https://en.wikipedia.org/wiki/The_Game_(mind_game)"><img src="./misc/game.gif"></a>
-        </div>
-      </div>
-      <p></p>
-      <div class="wide-sidebar">
-        <div class="box-title-bar"><img src="./misc/terminal.png" width="16"> cmd.exe <div class="right">- 🗖 x</div></div>
-        <div class="inner2">
-          <p style="margin:0">gaming@gamingreal:~$ specs</p>
-          <p><span class="cmd">OSs</span>: Windows 10 & Arch Linux</p>
-          <p><span class="cmd">Uptime</span>: 365 days, 4 hours</p>
-          <p><span class="cmd">Resolution</span>: 1920x1080@144hz x2</p>
-          <p><span class="cmd">CPU</span>: AMD Ryzen 7 4800H</p>
-          <p><span class="cmd">GPU</span>: Nvidia RTX 3050 Laptop</p>
-          <p><span class="cmd">Memory</span>: 512 MB / 16384 MB</p>
-          <p><span class="cmd">Form Factor</span>: Laptop</p>
-          <p style="margin:0">gaming@gamingreal:~$ ▃</p>
-        </div>
-      </div>
-      <p></p>
-      <div class="wide-sidebar">
-        <div class="box-title-bar"><img src="./misc/hl.png"> hl.exe <div class="right">- 🗖 x</div></div>
-        <img src="./misc/hlgame.png">
-      </div>
-    </div>
-    <div class="pic"><img src="./misc/pic.gif" width="128"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gaming</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="icon" type="image/x-icon" href="layout/bg.png">
+</head>
+
+<body>
+  <script src="index.js"></script>
+  
+  <div class="title">
+    <h1 style="margin-left: 10px;"><b>gaming.</b></h1> 
+    <a href="https://github.com/nasesa" target="_blank">github</a> 
+    <a href="https://steamcommunity.com/id/iamgamingreal/" target="_blank">steam</a> 
+  </div>
+  <div class="theme">
+    <button onclick="toggleTheme()" id="themeButton"><b>☾</b></button>
+  </div>
+  <div class="main" style="margin-top: 1%;">
+    <p><b># -- DESC --</b></p>
+    <img src="./misc/gaming.gif" alt="Flaming text that says 'gaming'">
+    <p>Welcome to my site!</p>
+    <p>I'm gaming.</p>
+    <p>Not much here currently, but I'll eventually get around to adding something. Maybe.</p>
+  </div>
+  <div class="main">
+    <p><b># -- PC INFO --</b></p>
+    <p><span style="color: var(--secondary-accent)">OS</span>: Arch Linux x86_64</p>
+    <p><span style="color: var(--secondary-accent)">WM</span>: Hyprland (Wayland), i3 (X11)</p>
+    <p><span style="color: var(--secondary-accent)">CPU</span>: AMD Ryzen 7 4800H (16) @ 4.30 GHz</p>
+    <p><span style="color: var(--secondary-accent)">GPU</span>: NVIDIA GeForce RTX 3050 Mobile</p>
+  </div>
+  <div class="main">
+    <p><b># -- BLINKIES & STUFF --</b></p>
+    <img src="./misc/computer.gif">
+    <img src="./misc/pepper.gif">
+    <img src="./misc/microwave.gif">
+    <a href="https://en.wikipedia.org/wiki/The_Game_(mind_game)"><img src="./misc/game.gif"></a>
+    <img height="20px" src="./misc/dislike.gif">
+  </div>
+  <div class="mongus"><img src="./misc/mongus.gif" width="128"></div>
+</body>
+
 </html>

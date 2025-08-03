@@ -1,114 +1,76 @@
-@font-face { font-family: Dos; src: url('./misc/dos.ttf'); } 
+:root {
+  --main-accent: #718184;
+  --secondary-accent: #B82F63;
+  --bg: #1E1818;
+  --fg: #FFD2D2;
+}
 
-  body {
-    image-rendering: pixelated;
-    background-color: #C5508B;
-    font-family: Dos;
-    font-size: large;
-  }
+* {
+  color: var(--fg);
+}
 
-  a {
-    color: #C5508B;
-  }
-  .sidebar-group {
-    position: fixed;
-    top: 0;
-    margin-top: 25px;
-    }
-  .center {
-    z-index: -100;
-    position: fixed;
-    background-image: url("./layout/dither.jpg"),url("./layout/scatter.gif");
-    background-size:cover;
-    background-repeat: repeat;
-    margin:auto;
-    width: 100vw;
-    height:100vh;
-    opacity: 0.4;
-    /* filter: blur(1px); */
-  }
-  .inner {
-    padding: 10px;
-    padding-bottom: 5px;
-    padding-top: 0px;
-    }
-    .inner2 {
-      padding-left: 5px;
-      background: #311422;
-      color: #B2EBF8;
-      }
-  .innerscroll {
-    padding: 10px;
-    height:250px;
-    padding-bottom: 5px;
-    padding-top: 0px;
-    overflow: scroll;
-    overflow-x: hidden;
-    }
+body {
+  image-rendering: pixelated;
+  background-image: url(./layout/bg.png);
+  background-size: 256px;
+}
 
-  .sidebar, .wide-sidebar, .box {
-    background: #B2EBF8;
-    border: 1px solid #d37da7;
-    box-shadow: 2px 2px ;
-    }
-  .sidebar img, .wide-sidebar img, .box img {
-    max-width: 100%;
-    height:auto;
-    }
-  .sidebar, .sidebar-box {
-    display: inline-block;
-    vertical-align: top;
-    width: 160px;
-    }
-    .title-bar, .box-title-bar {
-      background: #944b6e;
-      color: white;
-      font-weight: bold;
-      }
-    .box-title-bar {
-      padding: 7px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      }
-    .right {
-      float: right;
-      margin-right: 5px;
-      font-family: "Arial", sans-serif;
-      line-height: 12px;
-      }
-  .header {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    padding: 0 0 10px 0;
-    z-index: 9999;
-    height: 50px;
-  }
-  .audiopanel{
-    text-align: right;
-    float: right;
-  }
-  .audiopanel button{
-    scale: 2.5;
-    background: #B2EBF8;
-    border: 1px solid #d37da7;
-    box-shadow: 2px 2px ;
-  }
+.theme {
+  position:fixed;
+  border: 2px solid var(--main-accent);
+  background-color: var(--bg);
+  width: 48px;
+  height: 48px;
+  margin-top: 1%;
+  text-align: center;
+}
 
-  .pic{
-    position: fixed;
+.theme button {
+  font-size: 2em;
+  border: none;
+  background-color: var(--bg);
+}
+
+.title {
+  position: absoloute;
+  border: 2px solid var(--main-accent);
+  background-color: var(--bg);
+  padding: 10px;
+  height: 32;
+}
+
+
+
+.title h1,
+.title a {
+  display: inline;
+}
+
+.main {
+  border: 2px solid var(--main-accent);
+  background-color: var(--bg);
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+
+.main p,
+.main img {
+  margin-left: 10px;
+}
+
+.mongus {
+  position: fixed;
   left: 0;
   bottom: 0;
-  height:32;
+  height: 32;
   width: 100%;
-  }
+}
 
-  .center-group {
-    margin-right: 50vh;
-    margin-left: 50vh;
+/* make the mongus invisible if on mobile */
+@media screen and (max-width: 768) {
+  .mongus {
+    visibility: hidden;
   }
-  
-  .cmd {
-    color:#C5508B;
-  }
+}
