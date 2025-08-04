@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "ChicagoFLF"; 
+    src: url(./layout/font.ttf) format('woff2');
+}
+
+
 :root {
   --main-accent: #718184;
   --secondary-accent: #B82F63;
@@ -13,11 +19,13 @@ body {
   image-rendering: pixelated;
   background-image: url(./layout/bg.png);
   background-size: 256px;
+  font-family: 'ChicagoFLF';
+  font-size: 1em;
 }
 
 .theme {
   position:fixed;
-  border: 2px solid var(--main-accent);
+  border: 4px ridge var(--main-accent);
   background-color: var(--bg);
   width: 48px;
   height: 48px;
@@ -28,12 +36,12 @@ body {
 .theme button {
   font-size: 2em;
   border: none;
-  background-color: var(--bg);
+  background-color: alpha(var(--bg),0);
 }
 
 .title {
   position: absoloute;
-  border: 2px solid var(--main-accent);
+  border: 4px ridge var(--main-accent);
   background-color: var(--bg);
   padding: 10px;
   height: 32;
@@ -47,7 +55,7 @@ body {
 }
 
 .main {
-  border: 2px solid var(--main-accent);
+  border: 4px ridge var(--main-accent);
   background-color: var(--bg);
   width: 90%;
   margin: auto;
